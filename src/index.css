@@ -1,13 +1,64 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  background-color: #DFE2E6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+}
+
+.container {
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+.header {
+  display: inline-block;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  color: white;
+  background-color: #182b49;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-row button {
+  cursor: pointer;
+  border-radius: 5%;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 5px;
+}
+
+.button-row .add-subject,
+.button-row .save {
+  background-color: #00629B;
+}
+
+.button-row .submit {
+  background-color: #BF8C13;
+}
+
+.button-row button:hover,
+.button-row button:focus {
+  background-color: #182b49;
+}
+
+.button-row button p {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
