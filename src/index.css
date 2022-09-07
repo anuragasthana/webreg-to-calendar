@@ -1,14 +1,6 @@
 body {
   margin: 0px;
   background-color: #DFE2E6;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-}
-
-.container {
   font-family: 'Source Sans Pro', sans-serif
 }
 
@@ -20,14 +12,23 @@ body {
   width: 100%;
   margin-bottom: 50px;
   color: white;
+  font-size: x-large;
   background-color: #182b49;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .button-row {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px auto 10px auto;
 }
 
 .button-row button {
@@ -50,9 +51,18 @@ body {
   background-color: #BF8C13;
 }
 
-.button-row button:hover,
-.button-row button:focus {
+.button-row .submit:disabled {
+  background-color: #747678;
+}
+
+.button-row button:hover {
   background-color: #182b49;
+}
+
+.button-row button:focus {
+  outline: none !important;
+  border: 2px solid black;
+  margin: 3px
 }
 
 .button-row button p {
@@ -61,4 +71,75 @@ body {
   font-size: larger;
   margin-top: 10px;
   margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.subject {
+  display: flex;
+  font-size: larger;
+  /* background-color: #C1C3C7; */
+  border: 1px solid black;
+  margin: 10px 20px 10px 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+
+.subject span {
+  padding: auto 5px auto 5px;
+}
+
+.subject-title-display {
+  width: 35%;
+}
+
+.subject-title-display h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.subject-info-display {
+  width: 40%;
+}
+
+.subject-info-display div {
+  padding: 2px;
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.subject-type-display {
+  text-decoration: underline;
+}
+
+.subject-day-display {
+  font-style: italic;
+}
+
+.subject-color-display {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-color {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.remove-subject {
+  display: flex;
+  width: 5%;
+  justify-content: flex-end;
+  padding-top: 2px;
 }

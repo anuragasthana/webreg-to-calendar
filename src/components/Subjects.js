@@ -1,11 +1,12 @@
 import Subject from "./Subject";
 
-const Subjects = () => {
+const Subjects = ({ subjects, onDelete }) => {
   return (
       <>
-      <Subject />
-      <Subject />
-      <Subject />
+      {subjects.map((subject) => (
+        <Subject key={subject.id} subject={subject}
+        onDelete={onDelete} />
+      ))}
       </>
   )
 }
