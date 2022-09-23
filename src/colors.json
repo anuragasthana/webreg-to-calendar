@@ -1,0 +1,79 @@
+[
+    {
+        "id": "0",
+        "name":"Tomato",
+        "value": "tomato",
+        "color": "#DC2127",
+        "text": "white"
+    },
+    {
+        "id": "1",
+        "name":"Flamingo",
+        "value": "flamingo",
+        "color": "#FF887C",
+        "text": "black"
+    },
+    {
+        "id": "2",
+        "name":"Tangerine",
+        "value": "tangerine",
+        "color": "#FFB878",
+        "text": "black"
+    },
+    {
+        "id": "3",
+        "name":"Banana",
+        "value": "banana",
+        "color": "#FBD75B",
+        "text": "black"
+    },
+    {
+        "id": "4",
+        "name":"Sage",
+        "value": "sage",
+        "color": "#7AE7BF",
+        "text": "black"
+    },
+    {
+        "id": "5",
+        "name":"Basil",
+        "value": "basil",
+        "color": "#51B749",
+        "text": "black"
+    },
+    {
+        "id": "6",
+        "name":"Peacock",
+        "value": "peacock",
+        "color": "#46D6DB",
+        "text": "black"
+    },
+    {
+        "id": "7",
+        "name":"Blueberry",
+        "value": "blueberry",
+        "color": "#5484ED",
+        "text": "white"
+    },
+    {
+        "id": "8",
+        "name":"Lavender",
+        "value": "lavender",
+        "color": "#A4BDFC",
+        "text": "black"
+    },
+    {
+        "id": "9",
+        "name":"Grape",
+        "value": "grape",
+        "color": "#DBADFF",
+        "text": "black"
+    },
+    {
+        "id": "10",
+        "name":"Graphite",
+        "value": "graphite",
+        "color": "#E1E1E1",
+        "text": "black"
+    }
+]

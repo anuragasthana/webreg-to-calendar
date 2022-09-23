@@ -1,6 +1,6 @@
-const ActionButton = ({name, text, disabled}) => {
+const ActionButton = ({name, text, disabled, onClick}) => {
     return (
-        <button className={name} disabled={disabled}>
+        <button id={name} className='action-button' disabled={disabled} onClick={onClick}>
           <p>{text}</p>
         </button>
     )

@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: #DFE2E6;
+  background-color: white;
   font-family: 'Source Sans Pro', sans-serif
 }
 
@@ -31,7 +31,7 @@ body {
   margin: 10px auto 10px auto;
 }
 
-.button-row button {
+button {
   cursor: pointer;
   border-radius: 5%;
   border: none;
@@ -42,30 +42,32 @@ body {
   margin: 5px;
 }
 
-.button-row .add-subject,
-.button-row .save {
+.button-row #add-subject,
+.button-row #save,
+.modal #cancel {
   background-color: #00629B;
 }
 
-.button-row .submit {
+.button-row #submit,
+.modal #save-exit {
   background-color: #BF8C13;
 }
 
-.button-row .submit:disabled {
+.button-row #submit:disabled {
   background-color: #747678;
 }
 
-.button-row button:hover {
-  background-color: #182b49;
+.action-button:hover {
+  background-color: #182b49 !important;
 }
 
-.button-row button:focus {
+.action-button:focus {
   outline: none !important;
   border: 2px solid black;
   margin: 3px
 }
 
-.button-row button p {
+.action-button p {
   color: white;
   font-weight: bold;
   font-size: larger;
@@ -79,7 +81,6 @@ body {
 .subject {
   display: flex;
   font-size: larger;
-  /* background-color: #C1C3C7; */
   border: 1px solid black;
   margin: 10px 20px 10px 20px;
   padding: 5px 10px 5px 10px;
@@ -133,8 +134,8 @@ body {
   display: flex;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .remove-subject {
@@ -142,4 +143,56 @@ body {
   width: 5%;
   justify-content: flex-end;
   padding-top: 2px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.modal-header, .modal-footer {
+  padding: 10px;
+}
+
+.modal-header > input {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  font-size: xx-large;
+  width: 50%;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+.color-select {
+  margin-left: 10px;
+  font-size: larger;
+  height: 35px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px;
 }
