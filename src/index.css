@@ -31,7 +31,7 @@ body {
   margin: 10px auto 10px auto;
 }
 
-button {
+.action-button {
   cursor: pointer;
   border-radius: 5%;
   border: none;
@@ -130,7 +130,7 @@ button {
   justify-content: center;
 }
 
-.circle-color {
+.subject-color {
   display: flex;
   width: 40px;
   height: 40px;
@@ -167,26 +167,103 @@ button {
   padding: 10px;
 }
 
+.modal-header {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.modal-header > * {
+  position: absolute;
+}
+
 .modal-header > input {
   background: transparent;
   outline: none;
   border: none;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 2px solid grey;
   font-size: xx-large;
-  width: 50%;
+  width: 250px;
   padding-top: 10px;
+  margin-left: 20px;
   margin-right: 20px;
+  left: 0;
 }
 
-.color-select {
-  margin-left: 10px;
-  font-size: larger;
-  height: 35px;
+.modal-header > input:focus {
+  border-bottom: 2px solid black;
+}
+
+.dd-wrapper {
+  left: 325px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dd-header {
+  border: 0.2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  background: transparent;
+  height: 40px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.dd-header-title {
+  font-size: medium;
+  width: 85%;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dd-arrow {
+  font-size: medium;
+  margin-left: 2px;
+  margin-top: 2px;
+  justify-content: center;
+}
+
+.dd-list {
+  width: 130px;
+  border: 0.2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 2px;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dd-row {
+  display: flex;
+  justify-content: center;
+}
+
+.dd-row + .dd-row {
+  margin-top: 10px;
+}
+
+.dd-item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.dd-item + .dd-item {
+  margin-left: 14px;
 }
 
 .modal-footer {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .modal-title {

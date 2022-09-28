@@ -4,9 +4,16 @@ import { useState } from "react";
 import colors from "../colors.json";
 import Dropdown from "./Dropdown";
 
-const OUTSIDE_CLICK = true;
+const OUTSIDE_CLICK = false;
 
 const Modal = ({ show, onClose }) => {
+
+    const [selectedColor, selectColor] = useState(-1);
+
+    let getColor = (list, id) => {
+        return list.filter(item => item.id === id)[0];
+    }
+
     if(!show) {
         return null;
     }
@@ -17,14 +24,14 @@ const Modal = ({ show, onClose }) => {
                     <form className="add-subject">
                     <div className="modal-header">
                         <input type="text" placeholder="Subject Name" maxLength={10} autoFocus={true}/>
-                        <label>Color Select:</label>
-                        <Dropdown headerTitle='Select Color' list={colors} />
+                        <Dropdown headerTitle='Color Select' list={colors} selected={selectedColor}
+                        selectItem={selectColor} getItem={getColor}/>
                     </div>
                     <div className="modal-body">
-                        This is modal content.
+
                     </div>
                     <div className="modal-footer">
-                        <ActionButton name="save-exit" text="Save and Exit" />
+                        <ActionButton name="save-exit" text="Save and Exit" onClick={(e) => e.preventDefault()} />
                         <ActionButton name="cancel" text="Cancel" onClick={onClose} />
                     </div>
                     </form>

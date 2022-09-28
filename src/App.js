@@ -28,7 +28,7 @@ function App() {
         }
       ],
       events: [],
-      color: "blue"
+      color: "#8084CC"
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ function App() {
         }
       ],
       events: [],
-      color: "green"
+      color: "#38B47C"
     },
     {
       id: 3,
@@ -68,7 +68,7 @@ function App() {
         }
       ],
       events: [],
-      color: "red"
+      color: "#E87C74"
     },
     {
       id: 4,
@@ -82,7 +82,7 @@ function App() {
         }
       ],
       events: [],
-      color: "yellow"
+      color: "#686464"
     }
   ]);
 

@@ -12,7 +12,7 @@ const Subject = ({ subject, onDelete }) => {
         <div className="subject-time-display">{subject.section[0].timeStart} - {subject.section[0].timeEnd}</div>
       </span>
       <span className="subject-color-display">
-        <div className="circle-color" style={{backgroundColor: subject.color}}></div>
+        <div className="subject-color" style={{backgroundColor: subject.color}}></div>
       </span>
       <span className="remove-subject">
         <FaTimes onClick={() => onDelete(subject.id)}/>
